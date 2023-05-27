@@ -2,7 +2,7 @@
 import { RiCloseFill } from "react-icons/ri";
 import Link from "next/link";
 
-const Sidebar = ({ isOpen, toggleSidebar }: any) => {
+const Sidebar = ({ isOpen, toggleSidebar, setIsOpen }: any) => {
   return (
     <div
       className={`w-screen h-screen ${
@@ -17,19 +17,39 @@ const Sidebar = ({ isOpen, toggleSidebar }: any) => {
       </div>
 
       <div className="flex flex-col gap-4 text-[28px]">
-        <Link className="hover:text-gray-600" href={"/"}>
+        <Link
+          className="hover:text-gray-600"
+          href={"/"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Inicio
         </Link>
-        <Link className="hover:text-gray-600" href={"#sobre"}>
+        <Link
+          className="hover:text-gray-600"
+          href={"#sobre"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Sobre
         </Link>
-        <Link className="hover:text-gray-600" href={"#portfolio"}>
+        <Link
+          className="hover:text-gray-600"
+          href={"#portfolio"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Portfolio
         </Link>
-        <Link className="hover:text-gray-600" href={"#membros"}>
+        <Link
+          className="hover:text-gray-600"
+          href={"#membros"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Membros
         </Link>
-        <Link className="hover:text-gray-600" href={"#contato"}>
+        <Link
+          className="hover:text-gray-600"
+          href={"#contato"}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           Contato
         </Link>
       </div>

@@ -30,7 +30,11 @@ export default function RootLayout({
         <header>
           <nav>
             <Header toggleSidebar={toggleSidebar} />
-            <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+            <Sidebar
+              isOpen={isOpen}
+              toggleSidebar={toggleSidebar}
+              setIsOpen={setIsOpen}
+            />
           </nav>
         </header>
         <main>
