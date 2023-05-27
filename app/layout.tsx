@@ -10,11 +10,6 @@ import Footer from "@/components/Footer";
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
 
-export const metadata = {
-  title: "InfotecDevs",
-  description: "Grupo de desenvolvedores",
-};
-
 export default function RootLayout({
   children,
 }: {
