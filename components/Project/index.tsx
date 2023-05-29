@@ -9,7 +9,7 @@ interface ProjetoProps {
 }
 const Project: React.FC<ProjetoProps> = ({ title, src, onClick }) => {
     return (
-        <div className="row-span-1 relative group">
+        <div className="row-span-1 relative group" onClick={onClick}>
             <Image src={src} alt="image" />
             <div 
                 className="
