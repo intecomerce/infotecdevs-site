@@ -8,22 +8,40 @@ import work5 from "../public/images/work1.png";
 import Project from "./Project";
 
 const Work = () => {
-  return (
-    <section id="portfolio" className="container mx-auto py-10 px-4">
-      <Heading title="Projetos Criativos" />
 
-      <div className="grid grid-cols-3 gap-4">
+    const redireckWork = (uri: string): void => {
+        window.href = uri;
+    }
+    return (
+        <section id="portfolio" className="container mx-auto py-10 px-4">
+            <Heading title="Projetos Criativos" />
 
-        <Project title="Login" src={work1} onClick={()=>console.log("click")}/>
-        <Project title="Login" src={work2} onClick={()=>console.log("click")}/>
-        <Project title="Login" src={work3} onClick={()=>console.log("click")}/>
-        <Project title="Login" src={work4} onClick={()=>console.log("click")}/>
-        <Project title="Login" src={work5} onClick={()=>console.log("click")}/>
-        <Project title="Login" src={work2} onClick={()=>console.log("click")}/>
-        
-      </div>
-    </section>
-  );
+            <div className="grid grid-cols-3 gap-4">
+
+                <Project
+                    title="Login"
+                    src={work1}
+                    onClick={redireckWork("https://oclecio94.github.io/Login-e-Cadastro/")} />
+                <Project
+                    title="Login"
+                    src={work2}
+                    onClick={() => console.log("click")} />
+                <Project
+                    title="Login"
+                    src={work3} onClick={() => console.log("click")} />
+                <Project
+                    title="Login"
+                    src={work4} onClick={() => console.log("click")} />
+                <Project
+                    title="Login"
+                    src={work5} onClick={() => console.log("click")} />
+                <Project
+                    title="Login"
+                    src={work2} onClick={() => console.log("click")} />
+
+            </div>
+        </section>
+    );
 };
 
 export default Work;
