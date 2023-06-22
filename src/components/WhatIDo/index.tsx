@@ -6,7 +6,7 @@ const WhatIDo = () => {
   return (
     <section id="trabalhos" className="container mx-auto py-10 px-4">
       <Heading title="O que nós fazemos" />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="shadow-lg flex flex-col gap-4 px-8 py-10 bg-gray-600 text-white">
           <RiLightbulbFlashLine className="text-[28px]" />
           <h2 className="font-medium text-[20px]">Frontend</h2>

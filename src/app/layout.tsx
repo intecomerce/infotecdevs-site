@@ -9,7 +9,9 @@ import Work from "@/components/Work";
 import Members from "@/components/Members";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 export default function RootLayout({
   children,
@@ -20,6 +22,12 @@ export default function RootLayout({
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <html lang="pt-br">
       <body>

@@ -5,6 +5,7 @@ const Contact = () => {
     <section id="contato" className="container mx-auto py-10 px-4">
       <Heading title="Entre em contato" />
       <form
+        data-aos="fade-up"
         action="#"
         className="flex flex-col gap-8 border-2 border-gray-300 rounded-md p-4 drop-shadow-md"
       >
@@ -35,7 +36,7 @@ const Contact = () => {
           required
         ></textarea>
         <div>
-          <button type="submit" className="btn">
+          <button data-aos="fade-up" type="submit" className="btn">
             Enviar Mensagem
           </button>
         </div>

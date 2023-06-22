@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="bg-gray-400 h-[200px] text-white grid place-items-center">
-      <div className="text-center">
+      <div data-aos="fade-up" className="text-center">
         <p>Criado por INFOTECDEVS</p>
         <p>&copy; 2023 INFOTECDEVS</p>
         <h3>Parceiros:</h3>

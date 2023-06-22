@@ -14,7 +14,11 @@ const Work = () => {
     window.open(uri, "_blank");
   };
   return (
-    <section id="portfolio" className="container mx-auto py-10 px-4">
+    <section
+      data-aos="fade-up"
+      id="portfolio"
+      className="container mx-auto py-10 px-4"
+    >
       <Heading title="Projetos Criativos" />
 
       <div className="grid grid-cols-3 gap-4">

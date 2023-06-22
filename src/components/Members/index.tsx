@@ -12,7 +12,10 @@ const Members = () => {
   return (
     <section id="membros" className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
+        <div
+          data-aos="fade-up"
+          className="flex flex-col text-center w-full mb-20"
+        >
           <h1 className="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">
             Nosso Time
           </h1>
@@ -23,7 +26,7 @@ const Members = () => {
             entregar projetos de alto impacto e qualidade excepcional.
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div data-aos="fade-right" className="flex flex-wrap -m-4">
           <div className="p-4 lg:w-1/2">
             <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
               <Image

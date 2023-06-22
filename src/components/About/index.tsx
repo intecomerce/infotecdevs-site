@@ -14,10 +14,13 @@ const About = () => {
       <Heading title="Sobre nós" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
         <div>
-          <Image src={image} alt="imagem"></Image>
+          <Image data-aos="fade-right" src={image} alt="imagem"></Image>
         </div>
         <div>
-          <div className="flex flex-items justify-between w-[350px]">
+          <div
+            data-aos="fade-right"
+            className="flex flex-items justify-between w-[350px]"
+          >
             <div className="flex flex-col gap-6">
               <div className="flex gap-4 items-center font-medium">
                 <AiOutlineGift className="text-gray-600 text-[22px]" />
@@ -55,7 +58,7 @@ const About = () => {
               <div>Cotia-SP</div>
             </div>
           </div>
-          <div className="max-w-[800px]">
+          <div data-aos="fade-right" className="max-w-[800px]">
             <h2 className="font-bold mt-16 mb-10">
               Desenvolvedores Frontend e Backend
             </h2>
@@ -69,8 +72,8 @@ const About = () => {
               realidade impressionante. Junte-se a nós e descubra como podemos
               transformar sua ideia em um site ou aplicativo de sucesso.
             </p>
-            <Link href={"#membros"}>
-              <button className="btn">Devs</button>
+            <Link data-aos="fade-right" href={"#membros"} className="btn">
+              Devs
             </Link>
           </div>
         </div>

@@ -5,7 +5,7 @@ const Skills = () => {
     <section className="container mx-auto py-10 px-4">
       <Heading title="Skills" />
 
-      <p className="text-gray-600 -mt-10 mb-10 text-justify">
+      <p data-aos="fade-up" className="text-gray-600 -mt-10 mb-10 text-justify">
         Dominamos diversas linguagens de programação, como Typescript,
         Javascript, C#, Python e PHP. Além disso, estamos familiarizados com
         frameworks e plataformas populares, como ReactNative, .NET, Laravel,
@@ -15,7 +15,10 @@ const Skills = () => {
         dados, garantindo que nossos projetos sejam funcionais, intuitivos e
         escaláveis.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 border-2 border-[#ff4D41] rounded-md p-4 drop-shadow-md">
+      <div
+        data-aos="fade-up"
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 border-2 border-[#ff4D41] rounded-md p-4 drop-shadow-md"
+      >
         <div>
           <p>React.js</p>
           <div className="relative bg-gray-400 h-[4px] mt-2">
