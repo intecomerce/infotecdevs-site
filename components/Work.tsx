@@ -24,11 +24,11 @@ const Work = () => {
                     src={work1}
                     onClick={() => redireckWork("https://oclecio94.github.io/Login-e-Cadastro/")} />
                 <Project
-                    title="Login"
+                    title="Hort Frut"
                     src={work2}
                     onClick={() => redireckWork("https://oclecio94.github.io/Lojinha-Horti-Fruti/")} />
                 <Project
-                    title="Login"
+                    title="Loja de Orgânicos"
                     src={work3} onClick={() => redireckWork("https://organo-oclecio94.vercel.app/")} />
                 <Project
                     title="Login"
