@@ -2,12 +2,12 @@
 import "./globals.css";
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
-import About from "@/components/About";
-import WhatIDo from "@/components/WhatIDo";
-import Skills from "@/components/Skills";
-import Work from "@/components/Work";
-import Members from "@/components/Members";
-import Contact from "@/components/Contact";
+// import About from "@/app/About";
+// import WhatIDo from "@/app/WhatIDo";
+// import Skills from "@/app/Skills";
+// import Work from "@/app/Work";
+// import Members from "@/app/Members";
+// import Contact from "@/app/Contact";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
 import Aos from "aos";
@@ -43,12 +43,12 @@ export default function RootLayout({
         </header>
         <main>
           {children}
-          <About />
+          {/* <About />
           <WhatIDo />
           <Skills />
           <Work />
           <Members />
-          <Contact />
+          <Contact /> */}
         </main>
         <footer>
           <Footer />

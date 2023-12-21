@@ -26,9 +26,9 @@ const Members = () => {
             entregar projetos de alto impacto e qualidade excepcional.
           </p>
         </div>
-        <div data-aos="fade-right" className="flex flex-wrap -m-4">
+        <div data-aos="fade-right" className="flex flex-wrap -m-4 border-black border-2">
           <div className="p-4 lg:w-1/2">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <div className="    flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
               <Image
                 alt="integrante"
                 className="flex-shrink-0 rounded-full w-48 h-48 object-cover object-center sm:mb-0 mb-4"

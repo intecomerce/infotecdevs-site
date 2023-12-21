@@ -13,16 +13,16 @@ const Header = ({ toggleSidebar }: any) => {
           <Link href={"/"} className="hover:text-gray-200">
             Inicio
           </Link>
-          <Link href={"#sobre"} className="hover:text-gray-200">
+          <Link href={"/about"} className="hover:text-gray-200">
             Sobre
           </Link>
-          <Link href={"#portfolio"} className="hover:text-gray-200">
+          <Link href={"/work"} className="hover:text-gray-200">
             Projetos
           </Link>
-          <Link href={"#membros"} className="hover:text-gray-200">
+          <Link href={"/members"} className="hover:text-gray-200">
             Membros
           </Link>
-          <Link href={"#contato"} className="hover:text-gray-200">
+          <Link href={"/contact"} className="hover:text-gray-200">
             Contato
           </Link>
         </div>

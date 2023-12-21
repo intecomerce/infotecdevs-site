@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "../Heading";
+import Heading from "../../components/Heading";
 import image from "../../../public/images/site/business.jpg";
 import { AiOutlineGift } from "react-icons/ai";
 import { FiBookOpen } from "react-icons/fi";
