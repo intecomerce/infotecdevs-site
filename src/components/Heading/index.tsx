@@ -1,11 +1,31 @@
-const Heading = ({ title }: any) => {
+import React from 'react';
+
+interface IHeading {
+  title: string;
+}
+
+const Heading: React.FC<IHeading> = ({ title }) => {
+  const headingClasses = `
+    text-[#232940]
+    text-[32px]
+    font-medium
+    flex
+    items-center
+    gap-2
+    py-4
+  `;
+
+  const lineClasses = `
+    bg-gray-600
+    h-[2px]
+    w-[40px]
+    trans-y-1
+  `;
+
   return (
-    <div
-      data-aos="fade-right"
-      className="text-[#232940] text-[32px] font-medium flex items-center gap-4 py-16"
-    >
+    <div data-aos="fade-right" className={headingClasses}>
       {title}
-      <div className="bg-gray-600 h-[2px] w-[40px] trans-y-1"></div>
+      <div className={lineClasses}></div>
     </div>
   );
 };

@@ -30,12 +30,13 @@ const Work = () => {
         >
             <Heading title="Projetos Criativos" />
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <Project
                     title="Cuidando do seu Pet"
                     src={work5}
                     onClick={() => handleRedirect('/work/petshop')}
                 />
+
                 <Project
                     title="Restaurante de comida orgânica"
                     src={work3}

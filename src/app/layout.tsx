@@ -14,46 +14,40 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function RootLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
-  useEffect(() => {
-    Aos.init({
-      duration: 1500,
-    });
-  }, []);
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
+    useEffect(() => {
+        Aos.init({
+            duration: 1500,
+        });
+    }, []);
 
-  return (
-    <html lang="pt-br">
-      <body>
-        <header>
-          <nav>
-            <Header toggleSidebar={toggleSidebar} />
-            <Sidebar
-              isOpen={isOpen}
-              toggleSidebar={toggleSidebar}
-              setIsOpen={setIsOpen}
-            />
-          </nav>
-        </header>
-        <main>
-          {children}
-          {/* <About />
-          <WhatIDo />
-          <Skills />
-          <Work />
-          <Members />
-          <Contact /> */}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="pt-br">
+            <body>
+                <header>
+                    <nav>
+                        <Header toggleSidebar={toggleSidebar} />
+                        <Sidebar
+                            isOpen={isOpen}
+                            toggleSidebar={toggleSidebar}
+                            setIsOpen={setIsOpen}
+                        />
+                    </nav>
+                </header>
+                <main>
+                    {children}
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
+            </body>
+        </html>
+    );
 }

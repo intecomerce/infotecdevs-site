@@ -19,11 +19,11 @@ const Header = ({ toggleSidebar }: any) => {
           <Link href={"/work"} className="hover:text-gray-200">
             Projetos
           </Link>
-          <Link href={"/members"} className="hover:text-gray-200">
-            Membros
+          <Link href={"/team"} className="hover:text-gray-200">
+            Nosso Time
           </Link>
           <Link href={"/contact"} className="hover:text-gray-200">
-            Contato
+            Contatos
           </Link>
         </div>
         <Link
