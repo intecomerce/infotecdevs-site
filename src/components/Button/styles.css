@@ -1,0 +1,16 @@
+/* styles/tailwind.module.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Adicione aqui seus próprios estilos customizados, se necessário */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.default-class{
+    @apply font-bold hidden md:flex text-gray-600 border border-gray-600 px-4 py-1.5 rounded-[5px] items-center gap-2 hover:bg-gray-600 hover:text-white transition duration-200;
+}
+
+
