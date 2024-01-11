@@ -27,7 +27,7 @@ export default function Home() {
               expectativas dos nossos clientes.{" "}
             </p>
             <div className="flex justify-center items-center md:justify-start">
-              <Link data-aos="fade-up" className="btn" href={"#trabalhos"}>
+              <Link data-aos="fade-up" className="btn" href={"/about"}>
                 Saber Mais
               </Link>
             </div>

@@ -2,19 +2,19 @@ import React from "react";
 import Image from "next/image";
 
 interface ProjetoProps {
-  title: string;
-  src: any;
-  onClick: () => void;
+    title: string;
+    src: any;
+    onClick: () => void;
 }
 const Project: React.FC<ProjetoProps> = ({ title, src, onClick }) => {
-  return (
-    <div
-      className="row-span-1 relative group drop-shadow-2xl"
-      onClick={onClick}
-    >
-      <Image src={src} alt="image" />
-      <div
-        className="
+    return (
+        <div
+            className="row-span-1 relative group drop-shadow-2xl bg-black w-full h-full flex items-center justify-center"
+            onClick={onClick}
+        >
+            <Image src={src} alt="image" />
+            <div
+                className="
                     bg-[#000000bd] 
                     absolute w-[100%] 
                     top-0 opacity-0 
@@ -26,11 +26,11 @@ const Project: React.FC<ProjetoProps> = ({ title, src, onClick }) => {
                     text-white
                     text-center
                     "
-      >
-        {title}
-      </div>
-    </div>
-  );
+            >
+                {title}
+            </div>
+        </div>
+    );
 };
 
 export default Project;

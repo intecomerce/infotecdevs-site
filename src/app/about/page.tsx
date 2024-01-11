@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Heading from "../Heading";
+import Heading from "../../components/Heading";
 import image from "../../../public/images/site/business.jpg";
 import { AiOutlineGift } from "react-icons/ai";
 import { FiBookOpen } from "react-icons/fi";
@@ -14,14 +14,14 @@ const About = () => {
       <Heading title="Sobre nós" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px]">
         <div>
-          <Image data-aos="fade-right" src={image} alt="imagem"></Image>
+          <Image data-aos="fade-right" src={image} alt="imagem" ></Image>
         </div>
         <div>
           <div
             data-aos="fade-right"
             className="flex flex-items justify-between w-[350px]"
           >
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-4">
               <div className="flex gap-4 items-center font-medium">
                 <AiOutlineGift className="text-gray-600 text-[22px]" />
                 Fundada
@@ -43,14 +43,14 @@ const About = () => {
                 Localização
               </div>
             </div>
-            <div className="flex flex-col gap-6 text-gray-600">
+            <div className="flex flex-col gap-4 text-gray-600">
               <div>:</div>
               <div>:</div>
               <div>:</div>
               <div>:</div>
               <div>:</div>
             </div>
-            <div className="flex flex-col gap-6 text-gray-600">
+            <div className="flex flex-col gap-4 text-gray-600">
               <div>20.05.2023</div>
               <div>ADS</div>
               <div>www.infotecdevs.com.br</div>
@@ -59,7 +59,7 @@ const About = () => {
             </div>
           </div>
           <div data-aos="fade-right" className="max-w-[800px]">
-            <h2 className="font-bold mt-16 mb-10">
+            <h2 className="font-bold mt-8 mb-4">
               Desenvolvedores Frontend e Backend
             </h2>
             <p className="text-gray-600 text-justify">
@@ -72,8 +72,8 @@ const About = () => {
               realidade impressionante. Junte-se a nós e descubra como podemos
               transformar sua ideia em um site ou aplicativo de sucesso.
             </p>
-            <Link data-aos="fade-right" href={"#membros"} className="btn">
-              Devs
+            <Link data-aos="fade-right" href={"/team"} className="btn">
+              Conheça Nosso Time
             </Link>
           </div>
         </div>
