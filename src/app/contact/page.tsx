@@ -1,50 +1,31 @@
-import Heading from "../../components/Heading";
+import Box from "@/components/Box";
+import {
+    AiFillGithub,
+    AiFillLinkedin,
+    AiOutlineWhatsApp,
+} from "react-icons/ai";
+import PageTemplate from "@/components/PageTemplate";
+import "./styles.css";
 
 const Contact = () => {
     return (
-        <div className=" py-10 px-4 w-full">
-            <Heading title="Entre em contato" />
-            <section className="flex justify-center container w-full">
-
-                <form
-                    data-aos="fade-up"
-                    action="#"
-                    className="flex flex-col gap-8 border-2 w-[60%] border-gray-300 rounded-md p-4 drop-shadow-md"
-                >
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <input
-                            type="text"
-                            placeholder="Nome"
-                            className="inputStyle"
-                            required
-                        />
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="inputStyle"
-                            required
-                        />
-                    </div>
-                    <input
-                        type="text"
-                        placeholder="Sobre..."
-                        className="inputStyle"
-                        required
-                    />
-                    <textarea
-                        rows={6}
-                        placeholder="Mensagem..."
-                        className="inputStyle"
-                        required
-                    ></textarea>
-                    <div>
-                        <button data-aos="fade-up" type="submit" className="btn">
-                            Enviar Mensagem
-                        </button>
-                    </div>
-                </form>
-            </section>
-        </div>
+        <PageTemplate title="Encontre-nos">
+            <Box width={60}>
+                <div className="data-contact">
+                    <label>Email:</label>
+                    <label>steve.evets00@gmail.com</label>
+                </div>
+                <div className="data-contact">
+                    <label>Telefone:</label>
+                    <label>(11)9.9768-1306</label>
+                </div>
+                <section className="network-container">
+                    <AiFillLinkedin className="network-icon" />
+                    <AiOutlineWhatsApp className="network-icon" />
+                    <AiFillGithub className="network-icon" />
+                </section>
+            </Box>
+        </PageTemplate>
     );
 };
 

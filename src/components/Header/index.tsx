@@ -27,7 +27,7 @@ const Header = ({ toggleSidebar }: any) => {
           </Link>
         </div>
         <Link
-          href={"/mensagem"}
+          href={"/message"}
           className="font-bold hidden md:flex text-gray-600 border border-gray-600 px-4 py-1.5 rounded-[5px] items-center gap-2 hover:bg-gray-600 hover:text-white transition duration-200"
         >
           Enviar Mensagem
